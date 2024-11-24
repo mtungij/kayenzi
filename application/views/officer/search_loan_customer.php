@@ -749,7 +749,7 @@
                                    <input type="hidden" name="code" value="1" placeholder="CODE" autocomplete="off"
                                         required class="form-control"
                                         style="width: 130px; height:40px;border-radius: 8px;">
-                                   <input type="date" name="with_date" value="<?php echo $date; ?>" autocomplete="off"
+                                   <input type="date" name="with_date" value="<?php echo $date; ?>" readonly
                                         required class="form-control"
                                         style="width: 130px; height:40px;border-radius: 8px;">
 
@@ -985,7 +985,7 @@
                               <div class="col-lg-2">
                                    <span>Deposit date</span>
                                    <?php $today = date("Y-m-d") ?>
-                                   <input type="date" class="form-control" name="deposit_date"
+                                   <input type="date" readonly class="form-control" name="deposit_date"
                                         value="<?php echo $today; ?>" style="border-radius: 8px;">
                               </div>
                          </div>

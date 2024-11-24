@@ -141,16 +141,16 @@
                                     <div class="form-group row">
                                         <div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*First Name:</label>
-							<input type="text" name="f_name" placeholder="First name" value="<?php echo $customer_profile->f_name; ?>" autocomplete="off" class="form-control input-sm" required>
+							<input type="text" name="f_name" readonly   placeholder="First name" value="<?php echo $customer_profile->f_name; ?>" autocomplete="off" class="form-control input-sm" required>
 								</div>
 								<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Middle name:</label>
-									<input type="text" name="m_name" placeholder="Middle name" value="<?php echo $customer_profile->m_name; ?>" autocomplete="off" class="form-control input-sm" required>
+									<input type="text" readonly name="m_name" placeholder="Middle name" value="<?php echo $customer_profile->m_name; ?>" autocomplete="off" class="form-control input-sm" required>
 								</div>
 								
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Last name:</label>
-									<input type="text" name="l_name" value="<?php echo $customer_profile->l_name; ?>" placeholder="Last name" autocomplete="off" class="form-control input-sm" required>
+									<input type="text" readonly name="l_name" value="<?php echo $customer_profile->l_name; ?>" placeholder="Last name" autocomplete="off" class="form-control input-sm" required>
 								</div>
 
 								<!-- <div class="col-lg-3 form-group-sub">
@@ -165,14 +165,14 @@
 
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Employee:</label>
-								<input type="tetx" name="" class="form-control" value="<?php echo $customer_profile->empl_name; ?>" readonly>
+								<input type="tetx" name=""  class="form-control" value="<?php echo $customer_profile->empl_name; ?>" readonly>
 								
 							</select>
 								</div>
 						
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Gender:</label>
-								<select type="text" name="gender" class="form-control select2 input-sm" required class="form-control input-sm">
+								<select type="text"  name="gender" class="form-control select2 input-sm" required class="form-control input-sm">
 								<option value="<?php echo $customer_profile->gender; ?>"><?php echo $customer_profile->gender; ?></option>
 								<option value="male">Male</option>
 								<option value="female">Female</option>
@@ -188,7 +188,7 @@
 								</div>
 									<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Phone Number:</label>
-							<input type="number" name="phone_no" value="<?php echo $customer_profile->phone_no; ?>" placeholder="Eg,7538, 6283" autocomplete="off" class="form-control input-sm" required >
+							<input type="number" readonly name="phone_no" value="<?php echo $customer_profile->phone_no; ?>" placeholder="Eg,7538, 6283" autocomplete="off" class="form-control input-sm" required >
 								</div>
 									<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Region:</label>
@@ -246,11 +246,11 @@
                                     <div class="form-group row">
 	                            <div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Nick name:</label>
-							<input type="text" name="famous_area" autocomplete="off" value="<?php echo $customer_profile->famous_area; ?>" class="form-control input-sm" placeholder="Eg.Mama James, Baba Samwel" required>
+							<input type="text" readonly name="famous_area" autocomplete="off" value="<?php echo $customer_profile->famous_area; ?>" class="form-control input-sm" placeholder="Eg.Mama James, Baba Samwel" required>
 								</div>
 								<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Martial Status:</label>
-							<select type="text" name="martial_status" class="form-control input-sm" required>
+							<select type="text" aria-readonly="true" name="martial_status" class="form-control input-sm" required>
 								<option value="<?php echo $customer_profile->martial_status; ?>"><?php echo $customer_profile->martial_status; ?></option>
 								<option value="Married">Married</option>
 								<option value="Single">Single</option>
@@ -273,7 +273,7 @@
 								
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*National Identity Number:</label>
-									<input type="number" name="natinal_identity" value="<?php echo $customer_profile->natinal_identity; ?>" placeholder="Natinal Identity Number" autocomplete="off" class="form-control input-sm" required >
+									<input type="number" readonly name="natinal_identity" value="<?php echo $customer_profile->natinal_identity; ?>" placeholder="Natinal Identity Number" autocomplete="off" class="form-control input-sm" required >
 								</div>
 							<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Working status:</label>
@@ -284,21 +284,17 @@
 								<option value="Government Employee">Government Employee</option>
 								<option value="Private Sector Employee">Private Sector Employee</option>
 								<option value="Bussines Owner">Bussines Owner</option>
-								<option>Student</option>
-								<option value="Overseas Worker">Overseas Worker</option>
-								<option value="Pensioner">Pensioner</option>
-								<option value="Unemployed">Unemployed</option>
 								<option value="Self Employed">Self Employed</option>
 							</select>
 								</div>
 									<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Place Employment/Business:</label>
-							<input type="text" name="place_imployment" placeholder="Place Imployment" value="<?php echo $customer_profile->place_imployment; ?>" autocomplete="off" class="form-control input-sm">
+							<input type="text" readonly name="place_imployment" placeholder="Place Imployment" value="<?php echo $customer_profile->place_imployment; ?>" autocomplete="off" class="form-control input-sm">
 								</div>
 
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Bussiness Type:</label>
-							<input type="text" name="bussiness_type" placeholder="Bussiness Type" value="<?php echo $customer_profile->bussiness_type; ?>" autocomplete="off" class="form-control input-sm">
+							<input type="text" readonly name="bussiness_type" placeholder="Bussiness Type" value="<?php echo $customer_profile->bussiness_type; ?>" autocomplete="off" class="form-control input-sm">
 								</div>
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Number of Dependents:</label>
@@ -327,8 +323,6 @@
                     </div>
                 </div>
                 <?php echo form_close(); ?>
-
-
 
 
                            <div class="tab-pane" id="kt_apps_user_edit_tab_5" role="tabpanel">

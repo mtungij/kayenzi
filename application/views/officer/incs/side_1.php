@@ -205,14 +205,7 @@
                                           <span class="kt-menu__link-text">Register Customer</span>
                                    </a>
                             </li>
-                           <li class="kt-menu__item " aria-haspopup="true" >
-                                   <a  href="<?php echo base_url("oficer/manager_customer_update"); ?>" class="kt-menu__link ">
-                                          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
-                                                 <span></span>
-                                          </i>
-                                          <span class="kt-menu__link-text">Update Customer Information</span>
-                                   </a>
-                            </li>
+                           
                             <li class="kt-menu__item " aria-haspopup="true" >
                                    <a  href="<?php echo base_url("oficer/manager_allcustomer"); ?>" class="kt-menu__link ">
                                           <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
@@ -686,14 +679,7 @@
                                           <span class="kt-menu__link-text">Register Customer</span>
                                    </a>
                             </li>
-                            <li class="kt-menu__item " aria-haspopup="true" >
-                                   <a  href="<?php echo base_url("oficer/customer_update"); ?>" class="kt-menu__link ">
-                                          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
-                                                 <span></span>
-                                          </i>
-                                          <span class="kt-menu__link-text">Update Customer Information</span>
-                                   </a>
-                            </li>
+                           
                             <li class="kt-menu__item " aria-haspopup="true" >
                                    <a  href="<?php echo base_url("oficer/all_customer"); ?>" class="kt-menu__link ">
                                           <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
@@ -888,14 +874,7 @@
                                    </a>
                             </li>
 
-                              <li class="kt-menu__item " aria-haspopup="true" >
-                                   <a  href="<?php echo base_url("oficer/customer_update"); ?>" class="kt-menu__link ">
-                                          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
-                                                 <span></span>
-                                          </i>
-                                          <span class="kt-menu__link-text">Update Customer Information</span>
-                                   </a>
-                            </li>
+                           
                             <li class="kt-menu__item " aria-haspopup="true" >
                                    <a  href="<?php echo base_url("oficer/all_customer"); ?>" class="kt-menu__link ">
                                           <i class="kt-menu__link-bullet kt-menu__link-bullet--dot">
