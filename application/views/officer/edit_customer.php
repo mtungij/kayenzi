@@ -58,25 +58,25 @@
 							<div class="form-group form-group-last row">
 								<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*First Name:</label>
-							<input type="text" name="f_name" placeholder="First name" value="<?php echo $data->f_name; ?>" autocomplete="off" class="form-control input-sm" required>
+							<input type="text" name="f_name" placeholder="First name" readonly value="<?php echo $data->f_name; ?>" autocomplete="off" class="form-control input-sm" required>
 								</div>
 								<div class="col-lg-4 form-group-sub">
 									<label class="form-control-label">*Middle name:</label>
-									<input type="text" name="m_name" value="<?php echo $data->m_name; ?>" placeholder="Middle name" autocomplete="off" class="form-control input-sm" required>
+									<input type="text" name="m_name" readonly value="<?php echo $data->m_name; ?>" placeholder="Middle name" autocomplete="off" class="form-control input-sm" required>
 								</div>
 								<input type="hidden" name="comp_id" value="<?php echo $empl_data->comp_id; ?>">
 								<input type="hidden" name="blanch_id" value="<?php echo $empl_data->blanch_id; ?>">
 								<input type="hidden" name="empl_id" value="<?php echo $empl_data->empl_id; ?>">
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Last name:</label>
-									<input type="text" name="l_name" placeholder="Last name" value="<?php echo $data->l_name; ?>" autocomplete="off" class="form-control input-sm" required>
+									<input type="text" readonly name="l_name" placeholder="Last name" value="<?php echo $data->l_name; ?>" autocomplete="off" class="form-control input-sm" required>
 								</div>
 
 								
 						
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Gender:</label>
-								<select type="text" name="gender" class="form-control input-sm" required class="form-control input-sm">
+								<select type="text" readonly name="gender" class="form-control input-sm" required class="form-control input-sm">
 								<option value="<?php echo $data->gender; ?>"><?php echo $data->gender; ?></option>
 								<option value="male">Male</option>
 								<option value="female">Female</option>
@@ -84,7 +84,7 @@
 								</div>
 								<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Date of Birth:</label>
-							<input type="text" name="date_birth" value="<?php echo $data->date_birth; ?>" onchange="getDate(this.value)" placeholder="Date of Birth" autocomplete="off" class="form-control input-sm" required>
+							<input type="text" readonly name="date_birth" value="<?php echo $data->date_birth; ?>" onchange="getDate(this.value)" placeholder="Date of Birth" autocomplete="off" class="form-control input-sm" required>
 								</div>
 							<!-- 	<div class="col-lg-4 form-group-sub">
 									<label  class="form-control-label">*Year:</label>

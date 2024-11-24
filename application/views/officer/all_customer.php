@@ -66,7 +66,7 @@
 									<th>Region</th>
 									<th>Date</th>
 									<th>Status</th>
-									<th>Action</th>
+									
 				  									
 				  									
 				  						         </tr>
@@ -97,54 +97,13 @@
 				                        </td>
 				  				
 				  				<td>	
-				  			<div class="dropdown dropdown-inline">
-			<button type="button" class="btn btn-info  btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<i class=""></i> Action  	
-			</button>
-			<div class="dropdown-menu dropdown-menu-right">
-				<ul class="kt-nav">
-					<li class="kt-nav__section kt-nav__section--first">
-						<span class="kt-nav__section-text">Choose an option</span>
-					</li>
-					<li class="kt-nav__item">
-						<a href="#" class="kt-nav__link" data-toggle="modal" data-target="#kt_modal_<?php //echo $capitals->capital_id; ?>">
-							<i class="kt-nav__link-icon flaticon-edit" ></i>
-							<span class="kt-nav__link-text">Edit</span>
-						</a>
-					</li>
-					<li class="kt-nav__item">
-						<a href="<?php echo base_url("oficer/view_more_customer/{$customers->customer_id}") ?>" class="kt-nav__link">
-							<i class="kt-nav__link-icon flaticon-eye" ></i>
-							<span class="kt-nav__link-text">View more</span>
-						</a>
-					</li>
-					
-					
-					
-				</ul>
-			</div>
-	</div>
+			
 </td>			  											  							
 </tr>
 
 <?php endforeach; ?>
 									
-	                </tbody>
-	                <tfoot>
-                    <tr>
-           <th>S/No.</th>
-			<th>Customer ID no</th>
-			<th>customer name</th>
-			<th>Date of Birth</th>
-			<th>Sex</th>
-			<th>Phone number</th>
-			<th>Region</th>
-			<th>Date</th>
-			<th>Status</th>
-			<th>Action</th>
-                    </tr>
-                   </tfoot>
-                   </table>
+	                
 		<!--end: Datatable -->
 	</div>
 </div>

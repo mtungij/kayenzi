@@ -1940,7 +1940,7 @@ public function view_more_customer($customer_id){
 
     $all_customer_loan = $this->queries->get_loan_collection_customer($customer_id);
     
-    $this->load->view('officer/view_more_customer',['customer_profile'=>$customer_profile,'privillage'=>$privillage,'customer'=>$customer,'manager'=>$manager,'blanch'=>$blanch,'region'=>$region,'account'=>$account,'sponser'=>$sponser,'all_customer_loan'=>$all_customer_loan]);
+  $this->load->view('officer/view_more_customer',['customer_profile'=>$customer_profile,'privillage'=>$privillage,'customer'=>$customer,'manager'=>$manager,'blanch'=>$blanch,'region'=>$region,'account'=>$account,'sponser'=>$sponser,'all_customer_loan'=>$all_customer_loan]);
 }
 
 public function upadate_customer($customer_id){
