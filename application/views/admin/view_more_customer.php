@@ -655,13 +655,7 @@
                                     <td><?php echo $no++; ?>.</td>
                                     <td><?php echo $sponsers_datas->sp_name; ?> <?php echo $sponsers_datas->sp_mname; ?> <?php echo $sponsers_datas->sp_lname; ?></td>
                                     <td><?php echo $sponsers_datas->sp_phone_no; ?></td>
-                                    <td><?php echo $sponsers_datas->nature; ?></td>
-                                    
-                                    <td><?php echo $sponsers_datas->sp_relation; ?></td>
-                                    <td><?php echo $sponsers_datas->sp_nation; ?></td>
-                                    <td><?php echo $sponsers_datas->region_name; ?></td>
-                                    <td><?php echo $sponsers_datas->sp_district; ?></td>
-                                    <td><?php echo $sponsers_datas->sp_ward; ?></td>
+                                    <td></td> <td><?php echo $sponsers_datas->sp_relation; ?></td> <td><?php echo $sponsers_datas->sp_nation; ?></td> <td><?php echo $sponsers_datas->region_name; ?></td> <td><?php echo $sponsers_datas->sp_district; ?></td> <td><?php echo $sponsers_datas->sp_ward; ?></td>
                                     <td><?php echo $sponsers_datas->sp_street; ?></td>
  <!--                                <td>    
                             <div class="dropdown dropdown-inline">

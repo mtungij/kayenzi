@@ -1809,10 +1809,10 @@ public function get_loan_aproved(){
 	$this->load->model('queries');
 	$comp_id = $this->session->userdata('comp_id');
 	$loan_aproved = $this->queries->get_loanAproved($comp_id);
-	   //   echo "<pre>";
-	   // print_r($loan_aproved);
-	   //   echo "</pre>";
-	   //          exit();
+	//      echo "<pre>";
+	//    print_r($loan_aproved);
+	//      echo "</pre>";
+	//             exit();
 	$this->load->view('admin/loan_aproved',['loan_aproved'=>$loan_aproved]);
 
 }

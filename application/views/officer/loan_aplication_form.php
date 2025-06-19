@@ -386,7 +386,7 @@
 
 									<input type="hidden" name="customer_id" value="<?php echo $customer->customer_id; ?>">
 									<input type="hidden" name="blanch_id" value="<?php echo $customer->blanch_id; ?>">
-									<input type="hidden" name="loan_status" value="open">
+									
 
 									<div class="col-lg-2 form-group-sub">
 										<label  class="form-control-label">*Loan Amount Applied:</label>

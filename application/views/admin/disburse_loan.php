@@ -102,7 +102,8 @@
 				  						<td>
 				 <?php echo substr($loan_aproveds->loan_day, 0,10); ?>
 				                        </td>
-				                      <td><a href="<?php echo base_url("admin/delete_loanDisbursed/{$loan_aproveds->loan_id}") ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')"><i class="flaticon2-trash"></i></a></td>
+				                      <td><a href="<?php echo base_url("admin/delete_loanDisbursed/{$loan_aproveds->loan_id}") ?>" 
+									  class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')"><i class="flaticon2-trash"></i></a></td>
 				                       
 				  											  							
                                    </tr>

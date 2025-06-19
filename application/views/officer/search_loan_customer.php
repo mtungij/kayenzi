@@ -114,6 +114,8 @@
                                              <tbody>
 
                                                   <?php @$customer_loan = $this->queries->get_loan_active_customer($customer->customer_id);
+
+                                               
                                                   @$total_deposit = $this->queries->get_total_amount_paid_loan($customer_loan->loan_id);
 
                                                   @$out_stand = $this->queries->get_outstand_loan_customer($customer_loan->loan_id);
