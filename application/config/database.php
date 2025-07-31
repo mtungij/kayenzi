@@ -78,6 +78,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'james',
 	'password' => 'phamasoft',
+	// 'database' => 'emid_credit',
 	'database' => 'mikopo_db',  
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

@@ -6504,9 +6504,9 @@ return true;
 		$total_principal_receive = $this->queries->get_sum_principal_depost($comp_id);
 		$total_interest = $this->queries->get_sum_interest_depost($comp_id);
 
-		  //   echo "<pre>";
-		  // print_r($total_principal);
-		  //         exit();
+		//     echo "<pre>";
+		//   print_r($received);
+		//           exit();
 		$this->load->view('admin/today_received',['received'=>$received,'total_receved'=>$total_receved,'blanch'=>$blanch,'total_principal_receive'=>$total_principal_receive,'total_interest'=>$total_interest]);
 	}
 

@@ -1895,11 +1895,33 @@ public function update_password_data($comp_id, $userdata)
 
 
 
-    public function get_today_received_loan($comp_id){
-    	$date = date("Y-m-d");
-    	$data = $this->db->query("SELECT * FROM tbl_depost p JOIN tbl_loans l ON l.loan_id = p.loan_id JOIN tbl_customer c ON c.customer_id = l.customer_id JOIN tbl_blanch b ON b.blanch_id = l.blanch_id JOIN tbl_account_transaction at ON at.trans_id = p.depost_method WHERE p.comp_id = '$comp_id' AND p.depost_day = '$date'");
-    	return $data->result();
-    }
+    public function get_today_received_loan($comp_id) {
+    $date = date("Y-m-d");
+
+    $query = $this->db->query("
+        SELECT 
+            p.*, 
+            l.*, 
+            c.*, 
+            b.*, 
+            at.*, 
+            (
+                SELECT SUM(d2.depost) 
+                FROM tbl_depost d2 
+                WHERE d2.loan_id = p.loan_id
+            ) AS total_depost_all_time
+        FROM tbl_depost p 
+        JOIN tbl_loans l ON l.loan_id = p.loan_id 
+        JOIN tbl_customer c ON c.customer_id = l.customer_id 
+        JOIN tbl_blanch b ON b.blanch_id = l.blanch_id 
+        JOIN tbl_account_transaction at ON at.trans_id = p.depost_method 
+        WHERE p.comp_id = ? 
+        AND p.depost_day = ?
+    ", [$comp_id, $date]);
+
+    return $query->result();
+}
+
 
      public function get_today_received_loanBlanch($blanch_id){
     $date = date("Y-m-d");

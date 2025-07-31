@@ -63,9 +63,10 @@
 										<th><b>Phone Number</b></th>
 										<th><b>Duration Type</b></th>
 										<th><b>Loan Amount</b></th>
-										<th><b>Received Amount</b></th>
-										<!-- <th><b>Principal</b></th> -->
-										<!-- <th><b>Interest</b></th> -->
+										<th><b>Collection</b></th>
+										<th><b>Today Received</b></th>
+										<th><b>Total Paid</b></th>
+										<th><b>Total Remain</b></th>
 										<th><b>Deposit Method</b></th>
 										<th><b>Employee</b></th>
 										<th><b>Date</b></th>	
@@ -92,9 +93,10 @@
 				  							?>
 				  							<?php } ?></td>
 				  					<td><?php echo number_format($today_recevables->loan_int); ?></td>
+									<td><?= number_format($today_recevables->restration)?></td>
 				  					<td><?php echo number_format($today_recevables->depost); ?></td>
-				  				<!-- 	<td><?php //echo number_format($today_recevables->sche_principal); ?></td> -->
-				  					<!-- <td><?php //echo number_format($today_recevables->sche_interest); ?></td> -->
+				  					<td><?php echo number_format($today_recevables->total_depost_all_time); ?></td> 
+				  					 <td><?php echo number_format($today_recevables->loan_int - $today_recevables->total_depost_all_time); ?></td> 
 				  					
 				  					<td> <?php echo $today_recevables->account_name; ?></td>
 				  					<td> <?php echo $today_recevables->empl_username; ?></td>
@@ -114,6 +116,7 @@
 										<th><b></b></th>
 										<th><b></b></th>
 										<th><b></b></th>
+										<th></th>
 										<th><b><?php echo number_format($total_receved->total_depost); ?></b></th>
 										<!-- <th><b><?php //echo number_format($total_principal_receive->total_principal); ?></b></th> -->
 										<!-- <th><b><?php //echo number_format($total_interest->total_interest); ?></b></th> -->
